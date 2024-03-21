@@ -1,0 +1,146 @@
+body {
+    width: 100%;
+    margin: 0%;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwhMfVwC4rOA7Rxwm4a6Qj3Jn_7HtW5iUGzA&usqp=CAU');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.elem-group {
+    margin: 20px 0;
+}
+
+div.elem-group.inlined {
+    width: 49%;
+    display: inline-block;
+    float: left;
+    margin-left: 1%;
+}
+
+label {
+    display: block;
+    font-family: 'Nanum Gothic';
+    padding-bottom: 10px;
+    font-size: 1.25em;
+}
+
+input,
+select,
+textarea {
+    border-radius: 2px;
+    border: 2px solid #777;
+    box-sizing: border-box;
+    font-size: 1.25em;
+    font-family: 'Nanum Gothic';
+    width: 100%;
+    padding: 10px;
+}
+
+div.elem-group.inlined input {
+    width: 95%;
+    display: inline-block;
+}
+
+textarea {
+    height: 250px;
+}
+
+hr {
+    border: 1px dotted #ccc;
+}
+
+button {
+    height: 50px;
+    background: orange;
+    border: none;
+    color: white;
+    font-size: 1.25em;
+    font-family: 'Nanum Gothic';
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    border: 2px solid black;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.main {
+    color: red;
+    float: left;
+    height: 100%;
+    width: 65%;
+    padding: 15px 20px;
+    overflow: hidden;
+    margin-top: 7px;
+    border-radius: 2px;
+}
+
+.right {
+    background-color: whitesmoke;
+    float: left;
+    width: 20%;
+    margin-left: 10%;
+    padding: 10px 15px;
+    margin-top: 7px;
+}
+
+@media only screen and (max-width:800px) {
+    /* For tablets: */
+    .main {
+        width: 80%;
+        padding: 0;
+    }
+    .right {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    .menu,
+    .main,
+    .right {
+        width: 100%;
+    }
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #04AA6D;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+    text-align: center;
+    margin-top: 80%;
+    font-size: 12px;
+}
